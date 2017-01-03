@@ -1,14 +1,83 @@
-<div id="m-list">
+<div id="m-list" class="m-list">
 	<header>
-
+		<input type="text" placeholder="搜索品牌或型号" /><img src="./images/icon/icon_consult_grey.png">
 	</header>
-	<nav>
-
-	</nav>
 	<section>
+		<nav>
+			<ul>
+				<li v-for="(item,index) in nav" v-on:click="changeTab(index)" v-bind:class="{active:index==navIndex}">{{item}}</li>
+			</ul>
+		</nav>
+		<article>
+			<div class="swiper-container" id="index-swiper">
+		      <div class="swiper-wrapper">
+		      <div class="swiper-slide">
+		      	<img :src="listbanner.img" class="listBanner"/>
+		      	<h5>推荐</h5>
+		      	<ul>
+		      		<li v-for="item in list">
+		      			<img :src="item.listclassImg" />
+		      			<span>{{item.listclassDes}}</span>
+		      		</li>
+		      	</ul>
+		      	<h5>其它</h5>
+		      </div>
+              <div class="swiper-slide">
+              	<img :src="listbanner.img" class="listBanner"/>
+		      	<h5>推荐</h5>
+		      	<ul>
+		      		<li v-for="item in list">
+		      			<img :src="item.listclassImg" />
+		      			<span>{{item.listclassDes}}</span>
+		      		</li>
+		      	</ul>
+		      	<h5>其它</h5>
+              </div>
+		      <div class="swiper-slide">
+		      	<img :src="listbanner.img" class="listBanner"/>
+		      	<h5>推荐</h5>
+		      	<ul>
+		      		<li v-for="item in list">
+		      			<img :src="item.listclassImg" />
+		      			<span>{{item.listclassDes}}</span>
+		      		</li>
+		      	</ul>
+		      	<h5>其它</h5>
+		      </div>
+              <div class="swiper-slide">
+              	<img :src="listbanner.img" class="listBanner"/>
+		      	<h5>推荐</h5>
+		      	<ul>
+		      		<li v-for="item in list">
+		      			<img :src="item.listclassImg" />
+		      			<span>{{item.listclassDes}}</span>
+		      		</li>
+		      	</ul>
+		      	<h5>其它</h5>
+              </div>
 
+			  </div>
+			</div>
+		</article>
 	</section>
 	<footer>
-
+        <ul>
+        	<li>
+        		<i>1</i>
+        		<b>首页</b>
+        	</li>
+        	<li>
+        		<i>2</i>
+        		<b>选表</b>
+        	</li>
+        	<li>
+        		<i>3</i>
+        		<b>购物车</b>
+        	</li>
+        	<li>
+        		<i>4</i>
+        		<b>我的</b>
+        	</li>
+        </ul>
 	</footer>
 </div>

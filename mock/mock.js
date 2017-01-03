@@ -1,6 +1,8 @@
-var list = require('./list.json');
+var list01 = require('./list01.json');
+var list01banner=require('./list01banner.json')
 module.exports = function () {
 	return {
-		"list":list
+		"list01":list01,
+		"list01banner":list01banner
 	}
 }
