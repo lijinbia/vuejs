@@ -1,10 +1,10 @@
 var webpack = require('webpack');
 var ET = require('extract-text-webpack-plugin');
 module.exports = {
-	entry:__dirname + '/src/scripts/app01.js',
+	entry:__dirname + '/src/scripts/app.js',
 	output:{
 		path:__dirname + '/prd/',
-		filename:'bundle.list.js'
+		filename:'bundle.js'
 		//版本号控制开发过程中不常用
 		//filename:'[name]-[hash].js'
 	},
@@ -76,7 +76,7 @@ module.exports = {
 	plugins:[
 		//最后一步再压缩
 		new webpack.optimize.UglifyJsPlugin(),
-		new ET('bundle.list.css')
+		new ET('bundle.css')
 	]
 
 }
