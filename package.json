@@ -19,6 +19,14 @@
     "sass-loader": "^4.1.1",
     "string-loader": "0.0.1",
     "style-loader": "^0.13.1",
+    "swiper": "^3.4.1",
+    "template-html-loader": "^1.0.0",
+    "vue": "^2.1.8",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^10.0.2",
+    "vue-router": "^2.1.1",
+    "vue-template-compiler": "^2.1.8",
+    "vuex": "^2.1.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }
