@@ -1,5 +1,5 @@
-<template>
-<div class="m-listClass" id="m-listClass">
+<template  id="">
+<div class="m-listClass" >
 	<header>
 		<input type="text" placeholder="搜索品牌或型号" /><img src="./images/icon/icon_consult_grey.png">
 	</header>	

@@ -1281,6 +1281,56 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
+.m-index {
+  background: red;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .m-index header {
+    height: .44rem;
+    background: red; }
+    .m-index header ul {
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex; }
+      .m-index header ul li:first-child, .m-index header ul li:last-child {
+        width: .44rem;
+        height: 100%; }
+      .m-index header ul li:nth-child(2) {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: .1px; }
+  .m-index section {
+    background: yellow;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    width: 100%; }
+  .m-index footer {
+    height: .44rem;
+    background: blue; }
+    .m-index footer ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      height: 100%; }
+      .m-index footer ul router-link {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: .1px; }
+      .m-index footer ul li i, .m-index footer ul li b {
+        display: block;
+        text-align: center; }
+
 #m-list {
   background: #fff;
   height: 100%;
@@ -1647,22 +1697,298 @@ a {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: colum;
-  flex-direction: colum; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  height: 100%; }
   .m-listClass header {
-    height: .54rem;
-    background: red; }
+    height: .49rem;
+    background: #f1f1f1;
+    text-align: center;
+    line-height: .44rem;
+    position: relative; }
+    .m-listClass header input::-webkit-input-placeholder {
+      color: #8e8e93; }
+    .m-listClass header input {
+      width: 2.5rem;
+      height: .3rem;
+      padding-left: .1rem;
+      text-align: center;
+      border-radius: 0.1rem;
+      -webkit-background-clip: padding-box !important;
+      background-clip: padding-box !important;
+      border: none; }
+    .m-listClass header img {
+      width: .25rem;
+      height: .3rem;
+      margin-left: .1rem; }
+    .m-listClass header::after {
+      pointer-events: none;
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      content: " ";
+      border-color: #c8c7cc;
+      border-style: solid;
+      border-width: 0 0 1px 0;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
+      @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+        .m-listClass header::after {
+          width: 100%;
+          height: 100%; } }
+      @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+        .m-listClass header::after {
+          width: 200%;
+          height: 200%;
+          -webkit-transform: scale(0.5);
+          transform: scale(0.5); } }
+      @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+        .m-listClass header::after {
+          width: 300%;
+          height: 300%;
+          -webkit-transform: scale(0.33333);
+          transform: scale(0.33333); } }
   .m-listClass nav {
     height: .42rem;
-    background: green; }
-  .m-listClass .choice {
+    background: #f7f7f7;
+    position: relative; }
+    .m-listClass nav::after {
+      pointer-events: none;
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      content: " ";
+      border-color: #b2b2b2;
+      border-style: solid;
+      border-width: 1px 0 1px 0;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
+      @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+        .m-listClass nav::after {
+          width: 100%;
+          height: 100%; } }
+      @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+        .m-listClass nav::after {
+          width: 200%;
+          height: 200%;
+          -webkit-transform: scale(0.5);
+          transform: scale(0.5); } }
+      @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+        .m-listClass nav::after {
+          width: 300%;
+          height: 300%;
+          -webkit-transform: scale(0.33333);
+          transform: scale(0.33333); } }
+    .m-listClass nav ul {
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex; }
+      .m-listClass nav ul li {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: .1px;
+        text-align: center;
+        font-size: .15rem;
+        line-height: .42rem;
+        font-weight: bold; }
+        .m-listClass nav ul li:last-child {
+          position: relative; }
+          .m-listClass nav ul li:last-child::after {
+            pointer-events: none;
+            position: absolute;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            content: " ";
+            border-color: #dddddd;
+            border-style: solid;
+            border-width: 0 0 0 1px;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; }
+            @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+              .m-listClass nav ul li:last-child::after {
+                width: 100%;
+                height: 100%; } }
+            @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+              .m-listClass nav ul li:last-child::after {
+                width: 200%;
+                height: 200%;
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5); } }
+            @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+              .m-listClass nav ul li:last-child::after {
+                width: 300%;
+                height: 300%;
+                -webkit-transform: scale(0.33333);
+                transform: scale(0.33333); } }
+  .m-listClass .choice ul {
     height: .50rem;
-    background: red; }
+    background: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex; }
+    .m-listClass .choice ul li {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      width: .1px; }
+      .m-listClass .choice ul li i {
+        display: block;
+        background: #eeeeee;
+        height: .3rem;
+        width: .7rem;
+        font-size: .11rem;
+        margin: .1rem auto;
+        text-align: center;
+        line-height: .3rem;
+        border-radius: 0.1rem;
+        -webkit-background-clip: padding-box !important;
+        background-clip: padding-box !important; }
   .m-listClass section {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
     width: .1px;
-    background: green; }
+    width: 100%;
+    background: #ffffff;
+    height: 100%;
+    position: relative; }
+    .m-listClass section::after {
+      pointer-events: none;
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      content: " ";
+      border-color: #f7f7f7;
+      border-style: solid;
+      border-width: 3px 0 0 0;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0; }
+      @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+        .m-listClass section::after {
+          width: 100%;
+          height: 100%; } }
+      @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+        .m-listClass section::after {
+          width: 200%;
+          height: 200%;
+          -webkit-transform: scale(0.5);
+          transform: scale(0.5); } }
+      @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+        .m-listClass section::after {
+          width: 300%;
+          height: 300%;
+          -webkit-transform: scale(0.33333);
+          transform: scale(0.33333); } }
+    .m-listClass section ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      height: 100%;
+      overflow-y: scroll; }
+      .m-listClass section ul li {
+        width: 1.58rem;
+        height: 2.6rem; }
+        .m-listClass section ul li em, .m-listClass section ul li b, .m-listClass section ul li img, .m-listClass section ul li p {
+          display: block;
+          margin-left: .09rem; }
+        .m-listClass section ul li img {
+          width: .95rem;
+          height: 1.58rem;
+          margin: .11rem auto; }
+        .m-listClass section ul li b {
+          font-size: .12rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .m-listClass section ul li p {
+          height: .4rem;
+          color: red; }
+          .m-listClass section ul li p span {
+            font-size: .125rem;
+            line-height: .4rem;
+            font-weight: bold; }
+          .m-listClass section ul li p i {
+            font-size: .08rem;
+            line-height: .4rem; }
+        .m-listClass section ul li em {
+          font-size: .08rem;
+          color: #999999; }
+        .m-listClass section ul li:nth-child(odd) {
+          position: relative; }
+          .m-listClass section ul li:nth-child(odd)::after {
+            pointer-events: none;
+            position: absolute;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            content: " ";
+            border-color: #f7f7f7;
+            border-style: solid;
+            border-width: 0 3px 3px 0;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; }
+            @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+              .m-listClass section ul li:nth-child(odd)::after {
+                width: 100%;
+                height: 100%; } }
+            @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+              .m-listClass section ul li:nth-child(odd)::after {
+                width: 200%;
+                height: 200%;
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5); } }
+            @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+              .m-listClass section ul li:nth-child(odd)::after {
+                width: 300%;
+                height: 300%;
+                -webkit-transform: scale(0.33333);
+                transform: scale(0.33333); } }
+        .m-listClass section ul li:nth-child(even) {
+          position: relative; }
+          .m-listClass section ul li:nth-child(even)::after {
+            pointer-events: none;
+            position: absolute;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            content: " ";
+            border-color: #f7f7f7;
+            border-style: solid;
+            border-width: 0 0 3px 0;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; }
+            @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+              .m-listClass section ul li:nth-child(even)::after {
+                width: 100%;
+                height: 100%; } }
+            @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+              .m-listClass section ul li:nth-child(even)::after {
+                width: 200%;
+                height: 200%;
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5); } }
+            @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+              .m-listClass section ul li:nth-child(even)::after {
+                width: 300%;
+                height: 300%;
+                -webkit-transform: scale(0.33333);
+                transform: scale(0.33333); } }
 
 /*# sourceMappingURL=bundle.css.map*/

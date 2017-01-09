@@ -1,37 +1,54 @@
-.m-index{
-    background: red;
-    height: 100%;
-    
-    @include flexbox();
-    @include flex-direction(column);
-    >*{
-        width: 100%;
-    }
-    header{
-        height: .44rem;
-        background: red;
-        ul{
-            height: 100%;
-            @include flexbox ();
-            li:first-child,li:last-child{
-                width: .44rem;
-                height: 100%;
-                
-            }
-            li:nth-child(2){
-                @include flex();
-            }
-        }
-        
-        
-    }
-    section{
-        background: yellow;
-        @include flex();
-        width: 100%;
-    }
-    footer{
-        height: .44rem;
-        background: blue;
-    }
-}
+//.m-index{
+//  background: red;
+//  height: 100%;
+//  
+//  @include flexbox();
+//  @include flex-direction(column);
+////  >*{
+////      width: 100%;
+////  }
+// .container{
+//     @include flex(1);
+// }
+//  header{
+//      height: .44rem;
+//      background: red;
+//      ul{
+//          height: 100%;
+//          @include flexbox ();
+//          li:first-child,li:last-child{
+//              width: .44rem;
+//              height: 100%;
+//              
+//          }
+//          li:nth-child(2){
+//              @include flex();
+//          }
+//      }
+//      
+//      
+//  }
+//  section{
+//      background: yellow;
+//      @include flex();
+//      width: 100%;
+//  }
+//  footer{
+//      height: .44rem;
+//      background: blue;
+//      ul{
+//          @include flexbox();
+//          height: 100%;
+//          a{
+//               @include flex();
+//               li{
+//                  i,b{
+//                      display: block;
+//                      text-align: center;
+//                  }
+//              }
+//          }
+//          
+//      }
+//  }
+//}

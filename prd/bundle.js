@@ -53,7 +53,23 @@
 	//require('./views/list.js')
 	var html = __webpack_require__(7);
 	common.render(html);
-	__webpack_require__(8);
+	//require('./views/listClass.js');
+	//import index from './components/index.vue';
+	//import list from './components/list.vue';
+	//import carts from './components/carts.vue';
+	//import my from './components/my.vue';
+	//import listClass from './components/listClass.vue';
+	//const routes=[{
+	//	path:'/',
+	//	component:'index'
+	//}
+	//]
+	//const router =new VueRouter({
+	//	routes
+	//})
+	//const app=new vue({
+	//	router
+	//}).$mount('#app')
 
 /***/ },
 /* 1 */
@@ -82,13 +98,7 @@
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"m-listClass\">	<header>		<input type=\"text\" placeholder=\"搜索品牌或型号\" /><img src=\"./images/icon/icon_consult_grey.png\">	</header>		<nav>		<ul>			<li>综合</li>			<li>销量</li>			<li>价格</li>			<li>筛选</li>		</ul>	</nav>	<div class=\"choice\">		<ul>			<li>品牌</li>			<li>机芯</li>			<li>人群</li>			<li>正装</li>		</ul>	</div>	<section>		<ul>			<li v-for=\"item in listClass\">				<img :src=\"item.img\">				<span>{{item.des}}</span>				<p><span>{{item.price}}</span><i>{{item.discount}}</i></p>				<b>{{item.num}}</b>			</li>		</ul>	</section></div>"
-
-/***/ },
-/* 8 */
-/***/ function(module, exports) {
-
-	"use strict";
+	module.exports = "<div class=\"m-index\" id=\"app\">	<router-view>			</router-view>	<footer>		<ul>			<router-link :to=\'/\'>				<li>				<i>1</i>				<b>1</b>			</li>			</router-link>			<router-link :to=\'/\'>			<li>				<i>2</i>				<b>2</b>			</li>			</router-link>			<router-link :to=\'/\'>			<li>				<i>3</i>				<b>3</b>			</li>			</router-link>			<router-link :to=\'/\'>			<li>				<i>4</i>				<b>4</b>			</li>			</router-link>		</ul>	</footer></div>"
 
 /***/ }
 /******/ ]);

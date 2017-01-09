@@ -35,10 +35,23 @@ module.exports = {
 				test:/\.html/,
 				//后缀名叫什么都行。叫.html只是惯例
 				loader:'string'
+			},
+			{
+				test:/\.vue$/,
+				loader:'vue'
 			}
 		]
 	},
-	
+	vue: {
+	    loaders: {
+	      js: 'babel'
+	    }
+    }, 
+//	resolve:{
+//		alias:{
+//			'vue$':'vue/dist/vue.min.js'
+//		}
+//	},
 	//devServer启动
 	devServer:{
 		contentBase:__dirname + "/prd",

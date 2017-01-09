@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 @import './core/reset';
 @import "../lib/libs/swiper.css";
+@import "./common.scss";
+@import './modules/m-index.scss';
 @import './modules/m-list.scss';
 @import './modules/m-listClass.scss';

@@ -1,7 +1,7 @@
-<template>
-	<div id="m-list" class="m-list">
+<template id="">
+	<div  class="m-list" >
 		<header>
-			<input type="text" placeholder="搜索品牌或型号" /><img src="./images/icon/icon_consult_grey.png">
+			<input type="text" placeholder="搜索品牌或型号" /><!--<img src="./images/icon/icon_consult_grey.png">-->
 		</header>
 		<section>
 			<nav>
@@ -62,9 +62,11 @@
 			</article>
 		</section>
 	</div>
+
+</template>
 	<script>
 	//var vue = require('../libs/vue.js');
-    var Swiper = require('../libs/swiper.js');
+    //var Swiper = require('../libs/swiper.js');
 		module.exports = {
 				data: function(){
 					return {
@@ -108,4 +110,3 @@
 				}
 		}
 	</script>
-</template>
