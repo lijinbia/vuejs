@@ -1,0 +1,17 @@
+.list-enter-active{
+    @include transform(translateX(0));
+    @include transition(all .5s);
+    
+}
+.list-leave{
+    @include transform(translateX(0vw));
+    @include transition(all .5s);
+}
+.list-leave-active{
+    @include transform(translateX(100vw));
+//  @include transition(all .5s);
+}
+.list-enter{
+    @include transform(translateX(100vw));
+//  @include transition(all .5s);
+}
